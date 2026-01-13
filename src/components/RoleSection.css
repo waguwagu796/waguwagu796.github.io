@@ -26,6 +26,7 @@
 
 .role-content {
   color: #e0e0e0;
+  white-space: pre-line;
 }
 
 .role-text {
