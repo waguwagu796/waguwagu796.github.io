@@ -18,18 +18,6 @@ function AI() {
       images: [], // 이미지 URL 배열 (예: ['/images/project1-1.jpg', '/images/project1-2.jpg'])
       documents: [{ name: 'Drive_drowse.pdf', url: '/docs/Drive_drowse.pdf' }], // 문서 배열 (예: [{ name: '프로젝트_발표자료.pdf', url: '/docs/presentation.pdf' }])
       role: 'CNN 모델 설계 및 학습, LLM 통합 개발, 데이터 전처리 파이프라인 구축' // 내 역할 설명 (문자열 또는 배열)
-    },
-    {
-      id: 2,
-      title: 'AI 프로젝트 제목 2',
-      description: 'AI 프로젝트 설명을 여기에 작성하세요.',
-      tech: ['Python', 'Scikit-learn', 'OpenCV'],
-      github: '#',
-      demo: '#',
-      video: 'https://youtu.be/vo13k1iQqx0?si=7dRf7hN2J0k93r-V', // YouTube URL 또는 비디오 파일 경로를 여기에 입력하세요
-      images: [], // 이미지 URL 배열
-      documents: [], // 문서 배열
-      role: '' // 내 역할 설명
     }
   ];
 
