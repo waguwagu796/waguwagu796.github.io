@@ -16,7 +16,7 @@ function AI() {
       demo: '#',
       video: 'https://youtu.be/pDuAZA9cbt0?si=cz_CrSshxxci9Ac7', // YouTube URL 또는 비디오 파일 경로를 여기에 입력하세요 (예: 'https://www.youtube.com/watch?v=VIDEO_ID' 또는 '/videos/project1.mp4')
       images: [], // 이미지 URL 배열 (예: ['/images/project1-1.jpg', '/images/project1-2.jpg'])
-      documents: [], // 문서 배열 (예: [{ name: '프로젝트_발표자료.pdf', url: '/docs/presentation.pdf' }])
+      documents: [{ name: 'Drive_drowse.pdf', url: '/docs/Drive_drowse.pdf' }], // 문서 배열 (예: [{ name: '프로젝트_발표자료.pdf', url: '/docs/presentation.pdf' }])
       role: 'CNN 모델 설계 및 학습, LLM 통합 개발, 데이터 전처리 파이프라인 구축' // 내 역할 설명 (문자열 또는 배열)
     },
     {
