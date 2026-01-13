@@ -6,10 +6,10 @@ function AI() {
   const projects = [
     {
       id: 1,
-      title: 'AI 프로젝트 제목 1',
-      description: 'AI 프로젝트 설명을 여기에 작성하세요.',
-      tech: ['Python', 'TensorFlow', 'PyTorch'],
-      github: '#',
+      title: 'AI 기반 졸음 감지 예측모델',
+      description: '사람 표정의 이미지 파일을 통해 졸음 여부를 파악하는 시스템이다. CNN 기법을 활용하여 모델을 학습시켰고, LLM을 통해 사용자에게 자연어로 설명하는 기능이 포함되어있다.',
+      tech: ['Python', 'TensorFlow', 'Scikit-learn', 'OpenCV'],
+      github: 'https://github.com/waguwagu796/drive_drowse_LLM.git',
       demo: '#',
       video: 'https://youtu.be/pDuAZA9cbt0?si=cz_CrSshxxci9Ac7' // YouTube URL 또는 비디오 파일 경로를 여기에 입력하세요 (예: 'https://www.youtube.com/watch?v=VIDEO_ID' 또는 '/videos/project1.mp4')
     },

@@ -7,7 +7,7 @@ function Fullstack() {
     {
       id: 1,
       title: 'DaengTrip',
-      description: '반려동물 동반 여행 지원 시스템',
+      description: '반려동물 동반 여행지를 찾을 수 있는 시스템이다. 사용자는 지역별 여행지, 의료시설, 서비스 시설, 식당 및 카페를 찾을 수 있다. 또한 다양한 반려동물 관련 정보와 커뮤니티 기능을 통한 여행 공유가 가능하다.',
       tech: ['React', 'Node.js', 'MongoDB'],
       github: 'https://github.com/waguwagu796/daeng.git',
       demo: '#',
@@ -16,7 +16,7 @@ function Fullstack() {
     {
       id: 2,
       title: '농사팜',
-      description: '시장 시세 확인 가능한 농산물 직거래 시스템',
+      description: '시장 시세 확인 가능한 농산물 직거래 시스템이다. 사용자는 원하는 지역이나 시장을 선택하여 해당 농산물의 시세 추이를 확인할 수 있고, 가격 예측도 확인 가능하다. 또한 판매자는 시장을 등록하여 자신의 농산물을 판매할 수 있으며, 소비자는 올라온 농산물을 자유롭게 구매 가능하다.',
       tech: ['React', 'SpringBoot', 'MongoDB'],
       github: 'https://github.com/waguwagu796/farm2.git',
       demo: '#',
