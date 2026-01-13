@@ -1,0 +1,26 @@
+.video-container {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.video-player {
+  width: 100%;
+  height: auto;
+  min-height: 250px;
+  display: block;
+  background: #000;
+}
+
+.video-player[src] {
+  aspect-ratio: 16 / 9;
+}
+
+@media (max-width: 768px) {
+  .video-player {
+    min-height: 200px;
+  }
+}
+
