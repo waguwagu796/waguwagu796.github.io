@@ -1,5 +1,8 @@
 import React from 'react';
 import VideoPlayer from '../components/VideoPlayer';
+import ImageGallery from '../components/ImageGallery';
+import DocumentLinks from '../components/DocumentLinks';
+import RoleSection from '../components/RoleSection';
 import './Page.css';
 
 function Fullstack() {
@@ -11,7 +14,10 @@ function Fullstack() {
       tech: ['React', 'Node.js', 'MongoDB'],
       github: 'https://github.com/waguwagu796/daeng.git',
       demo: '#',
-      video: 'https://youtu.be/HhoATZ1Imtw?si=eFJ50t9xHMpegZ67' // YouTube URL 또는 비디오 파일 경로를 여기에 입력하세요 (예: 'https://www.youtube.com/watch?v=VIDEO_ID' 또는 '/videos/project1.mp4')
+      video: 'https://youtu.be/HhoATZ1Imtw?si=eFJ50t9xHMpegZ67', // YouTube URL 또는 비디오 파일 경로를 여기에 입력하세요 (예: 'https://www.youtube.com/watch?v=VIDEO_ID' 또는 '/videos/project1.mp4')
+      images: [], // 이미지 URL 배열 (예: ['/images/project1-1.jpg', '/images/project1-2.jpg'])
+      documents: [], // 문서 배열 (예: [{ name: '프로젝트_발표자료.pdf', url: '/docs/presentation.pdf' }])
+      role: '프론트엔드 개발, API 설계 및 구현, 데이터베이스 설계' // 내 역할 설명 (문자열 또는 배열)
     },
     {
       id: 2,
@@ -20,7 +26,10 @@ function Fullstack() {
       tech: ['React', 'SpringBoot', 'MongoDB'],
       github: 'https://github.com/waguwagu796/farm2.git',
       demo: '#',
-      video: 'https://youtu.be/KXSIM-IT25Q?si=UtSfACzehavGbCBc' // YouTube URL 또는 비디오 파일 경로를 여기에 입력하세요
+      video: 'https://youtu.be/KXSIM-IT25Q?si=UtSfACzehavGbCBc', // YouTube URL 또는 비디오 파일 경로를 여기에 입력하세요
+      images: [], // 이미지 URL 배열
+      documents: [], // 문서 배열
+      role: '' // 내 역할 설명
     }
   ];
 
@@ -36,13 +45,20 @@ function Fullstack() {
           {projects.map((project) => (
             <div key={project.id} className="project-card">
               <h2 className="project-title">{project.title}</h2>
-              <VideoPlayer videoUrl={project.video} title={project.title} />
+              {project.video && (
+                <VideoPlayer videoUrl={project.video} title={project.title} />
+              )}
+              {project.images && project.images.length > 0 && (
+                <ImageGallery images={project.images} />
+              )}
               <p className="project-description">{project.description}</p>
+              <RoleSection role={project.role} />
               <div className="project-tech">
                 {project.tech.map((tech, index) => (
                   <span key={index} className="tech-tag">{tech}</span>
                 ))}
               </div>
+              <DocumentLinks documents={project.documents} />
               <div className="project-links">
                 <a href={project.github} className="project-link" target="_blank" rel="noopener noreferrer">
                   GitHub
