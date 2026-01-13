@@ -1,6 +1,6 @@
 .page {
   flex: 1;
-  padding: 3rem 2rem;
+  padding: 4rem 2rem;
 }
 
 .page-container {
@@ -9,69 +9,109 @@
 }
 
 .page-title {
-  font-size: 3rem;
-  font-weight: bold;
-  color: white;
+  font-size: 3.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #ffffff 0%, #b0b0b0 50%, #ffffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   text-align: center;
   margin-bottom: 1rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  letter-spacing: -0.02em;
 }
 
 .page-subtitle {
   font-size: 1.3rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: #b0b0b0;
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
+  font-weight: 300;
+  letter-spacing: 0.02em;
 }
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 2.5rem;
   margin-bottom: 3rem;
 }
 
 .project-card {
-  background: white;
-  border-radius: 20px;
-  padding: 2rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
+  background: rgba(20, 20, 20, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 2.5rem;
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #667eea, #764ba2, #f093fb);
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  transform: translateY(-8px);
+  border-color: rgba(102, 126, 234, 0.5);
+  box-shadow: 
+    0 20px 60px rgba(102, 126, 234, 0.3),
+    0 0 0 1px rgba(102, 126, 234, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.project-card:hover::before {
+  transform: scaleX(1);
 }
 
 .project-title {
   font-size: 1.8rem;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.01em;
 }
 
 .project-description {
   font-size: 1.1rem;
-  color: #666;
-  line-height: 1.6;
+  color: #b0b0b0;
+  line-height: 1.7;
   margin-bottom: 1.5rem;
 }
 
 .project-tech {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 1.5rem;
+  gap: 0.7rem;
+  margin-bottom: 2rem;
 }
 
 .tech-tag {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  padding: 0.4rem 1rem;
+  background: rgba(102, 126, 234, 0.2);
+  border: 1px solid rgba(102, 126, 234, 0.3);
+  color: #b0b0ff;
+  padding: 0.5rem 1.2rem;
   border-radius: 20px;
   font-size: 0.9rem;
   font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.tech-tag:hover {
+  background: rgba(102, 126, 234, 0.3);
+  border-color: rgba(102, 126, 234, 0.5);
+  transform: translateY(-2px);
 }
 
 .project-links {
@@ -80,28 +120,47 @@
 }
 
 .project-link {
-  background: #667eea;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
-  padding: 0.7rem 1.5rem;
-  border-radius: 8px;
+  padding: 0.8rem 1.8rem;
+  border-radius: 10px;
   text-decoration: none;
   font-weight: 500;
   transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.project-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
 }
 
 .project-link:hover {
-  background: #764ba2;
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.5);
+}
+
+.project-link:hover::before {
+  left: 100%;
 }
 
 .empty-state {
   text-align: center;
-  padding: 3rem;
-  background: rgba(255, 255, 255, 0.95);
-  border-radius: 20px;
-  color: #666;
+  padding: 4rem;
+  background: rgba(20, 20, 20, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  color: #b0b0b0;
   font-size: 1.2rem;
+  backdrop-filter: blur(10px);
 }
 
 @media (max-width: 768px) {

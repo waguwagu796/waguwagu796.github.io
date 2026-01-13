@@ -1,6 +1,6 @@
 .home {
   flex: 1;
-  padding: 3rem 2rem;
+  padding: 4rem 2rem;
 }
 
 .home-container {
@@ -10,40 +10,51 @@
 
 .hero-section {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
   color: white;
 }
 
 .hero-title {
-  font-size: 3.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, #ffffff 0%, #b0b0b0 50%, #ffffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 40px rgba(102, 126, 234, 0.3);
+  letter-spacing: -0.02em;
 }
 
 .hero-subtitle {
   font-size: 1.5rem;
-  opacity: 0.9;
+  color: #b0b0b0;
+  font-weight: 300;
+  letter-spacing: 0.02em;
 }
 
 .category-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-bottom: 4rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  margin-bottom: 5rem;
 }
 
 .category-card {
-  background: white;
-  border-radius: 20px;
-  padding: 2.5rem;
+  background: rgba(20, 20, 20, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 3rem;
   text-decoration: none;
   color: inherit;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
   display: block;
+  backdrop-filter: blur(10px);
 }
 
 .category-card::before {
@@ -52,69 +63,105 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 5px;
-  background: linear-gradient(90deg, #667eea, #764ba2);
+  height: 3px;
+  background: linear-gradient(90deg, #667eea, #764ba2, #f093fb);
   transform: scaleX(0);
-  transition: transform 0.3s ease;
+  transition: transform 0.4s ease;
+}
+
+.category-card::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(102, 126, 234, 0.1) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
 }
 
 .category-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  transform: translateY(-8px);
+  border-color: rgba(102, 126, 234, 0.5);
+  box-shadow: 
+    0 20px 60px rgba(102, 126, 234, 0.3),
+    0 0 0 1px rgba(102, 126, 234, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 .category-card:hover::before {
   transform: scaleX(1);
 }
 
+.category-card:hover::after {
+  opacity: 1;
+}
+
 .card-icon {
-  font-size: 4rem;
-  margin-bottom: 1rem;
+  font-size: 4.5rem;
+  margin-bottom: 1.5rem;
+  filter: drop-shadow(0 0 10px rgba(102, 126, 234, 0.3));
+  transition: transform 0.4s ease;
+}
+
+.category-card:hover .card-icon {
+  transform: scale(1.1) rotate(5deg);
 }
 
 .card-title {
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 600;
   margin-bottom: 1rem;
-  color: #333;
+  color: #ffffff;
+  letter-spacing: -0.01em;
 }
 
 .card-description {
   font-size: 1.1rem;
-  color: #666;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
+  color: #b0b0b0;
+  line-height: 1.7;
+  margin-bottom: 2rem;
 }
 
 .card-arrow {
   font-size: 2rem;
-  color: #667eea;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   font-weight: bold;
-  transition: transform 0.3s ease;
+  transition: transform 0.4s ease;
+  display: inline-block;
 }
 
 .category-card:hover .card-arrow {
-  transform: translateX(10px);
+  transform: translateX(12px);
 }
 
 .about-section {
-  background: rgba(255, 255, 255, 0.95);
-  border-radius: 20px;
-  padding: 3rem;
+  background: rgba(20, 20, 20, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 4rem;
   text-align: center;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
 }
 
 .about-title {
   font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 1.5rem;
-  color: #333;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  letter-spacing: -0.01em;
 }
 
 .about-text {
   font-size: 1.2rem;
-  color: #666;
+  color: #b0b0b0;
   line-height: 1.8;
   max-width: 800px;
   margin: 0 auto;
