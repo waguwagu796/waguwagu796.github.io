@@ -7,9 +7,9 @@ function Home() {
     <div className="home">
       <div className="home-container">
         <div className="hero-section">
-          <h1 className="hero-title">프로젝트 포트폴리오</h1>
+          <h1 className="hero-title">김재혁</h1>
           <p className="hero-subtitle">
-            제가 개발한 다양한 프로젝트들을 소개합니다
+            웹개발과 AI 활용 개발 프로젝트를 소개합니다.
           </p>
         </div>
 

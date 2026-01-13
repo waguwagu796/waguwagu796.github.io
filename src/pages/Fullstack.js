@@ -6,19 +6,19 @@ function Fullstack() {
   const projects = [
     {
       id: 1,
-      title: '프로젝트 제목 1',
-      description: '프로젝트 설명을 여기에 작성하세요.',
+      title: 'DaengTrip',
+      description: '반려동물 동반 여행 지원 시스템',
       tech: ['React', 'Node.js', 'MongoDB'],
-      github: '#',
+      github: 'https://github.com/waguwagu796/daeng.git',
       demo: '#',
       video: 'https://youtu.be/HhoATZ1Imtw?si=eFJ50t9xHMpegZ67' // YouTube URL 또는 비디오 파일 경로를 여기에 입력하세요 (예: 'https://www.youtube.com/watch?v=VIDEO_ID' 또는 '/videos/project1.mp4')
     },
     {
       id: 2,
-      title: '프로젝트 제목 2',
-      description: '프로젝트 설명을 여기에 작성하세요.',
-      tech: ['Vue.js', 'Express', 'PostgreSQL'],
-      github: '#',
+      title: '농사팜',
+      description: '시장 시세 확인 가능한 농산물 직거래 시스템',
+      tech: ['React', 'SpringBoot', 'MongoDB'],
+      github: 'https://github.com/waguwagu796/farm2.git',
       demo: '#',
       video: 'https://youtu.be/KXSIM-IT25Q?si=UtSfACzehavGbCBc' // YouTube URL 또는 비디오 파일 경로를 여기에 입력하세요
     }
