@@ -10,7 +10,9 @@ function Fullstack() {
     {
       id: 1,
       title: 'DaengTrip',
-      description: '반려동물 동반 여행지를 찾을 수 있는 시스템이다. \n사용자는 지역별 여행지, 의료시설, 서비스 시설, 식당 및 카페를 찾을 수 있다. \n또한 다양한 반려동물 관련 정보와 커뮤니티 기능을 통한 여행 공유가 가능하다.',
+      description: `반려동물 동반 여행지를 찾을 수 있는 시스템이다. 
+사용자는 지역별 여행지, 의료시설, 서비스 시설, 식당 및 카페를 찾을 수 있다. 
+또한 다양한 반려동물 관련 정보와 커뮤니티 기능을 통한 여행 공유가 가능하다.`,
       tech: ['React', 'Node.js', 'MongoDB'],
       github: 'https://github.com/waguwagu796/daeng.git',
       demo: '#',
