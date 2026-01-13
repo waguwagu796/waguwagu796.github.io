@@ -10,7 +10,8 @@ function AI() {
     {
       id: 1,
       title: 'AI 기반 졸음 감지 예측모델',
-      description: '사람 표정의 이미지 파일을 통해 졸음 여부를 파악하는 시스템이다. CNN 기법을 활용하여 모델을 학습시켰고, LLM을 통해 사용자에게 자연어로 설명하는 기능이 포함되어있다.',
+      description: `사람 표정의 이미지 파일을 통해 졸음 여부를 파악하는 시스템이다. 
+      CNN 기법을 활용하여 모델을 학습시켰고, LLM을 통해 사용자에게 자연어로 설명하는 기능이 포함되어있다.`,
       tech: ['Python', 'TensorFlow', 'Scikit-learn', 'OpenCV'],
       github: 'https://github.com/waguwagu796/drive_drowse_LLM.git',
       demo: '#',
