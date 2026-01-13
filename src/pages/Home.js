@@ -15,7 +15,6 @@ function Home() {
 
         <div className="category-cards">
           <Link to="/fullstack" className="category-card">
-            <div className="card-icon">💻</div>
             <h2 className="card-title">Fullstack</h2>
             <p className="card-description">
               풀스택 웹 애플리케이션 프로젝트들을 확인해보세요
@@ -24,7 +23,6 @@ function Home() {
           </Link>
 
           <Link to="/ai" className="category-card">
-            <div className="card-icon">🤖</div>
             <h2 className="card-title">AI</h2>
             <p className="card-description">
               인공지능 및 머신러닝 프로젝트들을 확인해보세요
