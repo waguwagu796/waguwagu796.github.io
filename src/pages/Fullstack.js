@@ -16,7 +16,7 @@ function Fullstack() {
       tech: ['React', 'Node.js', 'MongoDB'],
       github: 'https://github.com/waguwagu796/daeng.git',
       demo: '#',
-      video: 'https://youtu.be/HhoATZ1Imtw?si=eFJ50t9xHMpegZ67', // YouTube URL 또는 비디오 파일 경로를 여기에 입력하세요 (예: 'https://www.youtube.com/watch?v=VIDEO_ID' 또는 '/videos/project1.mp4')
+      // video: 'https://youtu.be/HhoATZ1Imtw?si=eFJ50t9xHMpegZ67', // YouTube URL 또는 비디오 파일 경로를 여기에 입력하세요 (예: 'https://www.youtube.com/watch?v=VIDEO_ID' 또는 '/videos/project1.mp4')
       images: [], // 이미지 URL 배열 (예: ['/images/project1-1.jpg', '/images/project1-2.jpg'])
       documents: [{ name: 'DaengTrip.pdf', url: '/docs/DaengTrip.pdf' }], // 문서 배열 (예: [{ name: '프로젝트_발표자료.pdf', url: '/docs/presentation.pdf' }])
       role: `1. 반려동물 여행지 API 연동
@@ -32,8 +32,8 @@ function Fullstack() {
       또한 판매자는 시장을 등록하여 자신의 농산물을 판매할 수 있으며, 소비자는 올라온 농산물을 자유롭게 구매 가능하다.`,
       tech: ['React', 'SpringBoot', 'MongoDB'],
       github: 'https://github.com/waguwagu796/farm2.git',
-      demo: '#',
-      video: 'https://youtu.be/KXSIM-IT25Q?si=UtSfACzehavGbCBc', // YouTube URL 또는 비디오 파일 경로를 여기에 입력하세요
+      demo: '',
+      // video: 'https://youtu.be/KXSIM-IT25Q?si=UtSfACzehavGbCBc', // YouTube URL 또는 비디오 파일 경로를 여기에 입력하세요
       images: [], // 이미지 URL 배열
       documents: [{ name: 'farm.pdf', url: '/docs/farm.pdf' }], // 문서 배열
       role: `1. API 연동 및 그래프 제작
@@ -72,9 +72,9 @@ function Fullstack() {
                 <a href={project.github} className="project-link" target="_blank" rel="noopener noreferrer">
                   GitHub
                 </a>
-                <a href={project.demo} className="project-link" target="_blank" rel="noopener noreferrer">
+                {/* <a href={project.demo} className="project-link" target="_blank" rel="noopener noreferrer">
                   Demo
-                </a>
+                </a> */}
               </div>
             </div>
           ))}
