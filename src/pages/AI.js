@@ -9,6 +9,20 @@ function AI() {
   const projects = [
     {
       id: 1,
+      title: 'Comeback11',
+      description: `축구선수의 부상 복귀 이후 경기력 예측 시스템이다. 
+      선수의 나이, 포지션, 부상 이력, 부상 전 경기력 등을 바탕으로 머신러닝 모델을 구축하여 복귀 후 경기력을 예측한다.`,
+      tech: ['Python', 'Scikit-learn', 'Random Forest'],
+      // github: 'https://github.com/waguwagu796/drive_drowse_LLM.git',
+      demo: '#',
+      // video: 'https://youtu.be/pDuAZA9cbt0?si=cz_CrSshxxci9Ac7', // YouTube URL 또는 비디오 파일 경로를 여기에 입력하세요 (예: 'https://www.youtube.com/watch?v=VIDEO_ID' 또는 '/videos/project1.mp4')
+      images: [], // 이미지 URL 배열 (예: ['/images/project1-1.jpg', '/images/project1-2.jpg'])
+      // documents: [{ name: 'Comeback11.hwp', url: '/docs/Comeback11.hwp' }], // 문서 배열 (예: [{ name: '프로젝트_발표자료.pdf', url: '/docs/presentation.pdf' }])
+      role: `1. 경기 기록 및 부상 이력 데이터 수집
+      2. 랜덤 포레스트 기법 활용한 머신러닝 기반 예측 모델 설계` // 내 역할 설명 (문자열 또는 배열)
+    },
+    {
+      id: 2,
       title: 'AI 기반 졸음 감지 예측모델',
       description: `사람 표정의 이미지 파일을 통해 졸음 여부를 파악하는 시스템이다. 
       CNN 기법을 활용하여 모델을 학습시켰고, LLM을 통해 사용자에게 자연어로 설명하는 기능이 포함되어있다.`,
