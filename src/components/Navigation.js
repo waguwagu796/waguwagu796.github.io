@@ -9,7 +9,7 @@ function Navigation() {
     <nav className="navigation">
       <div className="nav-container">
         <Link to="/" className="nav-logo">
-          Portfolio
+          김재혁 · FULL-STACK & AI
         </Link>
         <div className="nav-links">
           <Link 
