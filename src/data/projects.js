@@ -26,8 +26,14 @@ export const aiProjects = [
     tech: ['Python', 'TensorFlow', 'Scikit-learn', 'OpenCV'],
     github: 'https://github.com/waguwagu796/drive_drowse_LLM.git',
     demo: '#',
-    video: '',
-    images: [],
+    video: '/images/Drive_drowse/Drive_drowse.mp4',
+    images: [
+      { url: '/images/Drive_drowse/초기 화면.png', description: '서비스 초기 화면' },
+      { url: '/images/Drive_drowse/이미지 삽입.png', description: '이미지 삽입 화면' },
+      { url: '/images/Drive_drowse/분석 결과.png', description: '예측 모델 분석 결과 화면' },
+      { url: '/images/Drive_drowse/결과 설명.png', description: 'AI가 분석한 결과 설명 화면' },
+      { url: '/images/Drive_drowse/권장 사항.png', description: 'LLM 기반 권장 사항 안내 화면' }
+    ],
     documents: [{ name: 'Drive_drowse.pdf', url: '/docs/Drive_drowse.pdf' }],
     role: `1. CNN 모델 설계 및 학습
     2. LLM 통합 개발
