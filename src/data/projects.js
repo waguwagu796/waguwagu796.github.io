@@ -2,6 +2,25 @@
 export const aiProjects = [
   {
     id: 1,
+    title: 'OCR, LLM, RAG 기반 주거 계약 의사결정 보조 시스템',
+    description: `OCR, LLM, RAG 기반 주거 계약 의사결정 보조 시스템입니다. 
+    주거 계약서의 내용을 OCR로 추출하고, LLM을 통해 계약 내용을 요약하며, RAG를 통해 관련 법률 정보를 검색하여 사용자에게 주거 계약에 대한 의사결정을 도와줍니다.`,
+    tech: ['Python', 'OCR', 'LLM', 'RAG'],
+    github: 'https://github.com/waguwagu796/AI_HomeMatch.git',
+    demo: '#',
+    video: '/images/HomeScan/HomeScan.mp4',
+    images: [
+      // { url: '/images/HomeScan/분석 결과.png', description: 'OCR 모델 분석 결과 화면' },
+      // { url: '/images/HomeScan/상세 예측 정보.png', description: '계약 내용 요약 및 관련 법률 정보 표시' },
+      // { url: '/images/HomeScan/참고사항.png', description: '사용자에게 주거 계약에 대한 참고사항 안내' }
+    ],
+    documents: [],
+    role: `1. OCR 모델 설계 및 학습
+    2. 배포 환경 설정 및 API 구축
+    3. LLM 및 RAG 통합 개발`
+  },
+  {
+    id: 2,
     title: 'Comeback11',
     description: `축구선수의 부상 복귀 이후 경기력 예측 시스템입니다. 
     선수의 나이, 포지션, 부상 이력, 부상 전 경기력 등을 바탕으로 머신러닝 모델을 구축하여 복귀 후 경기력을 예측합니다.`,
@@ -19,7 +38,7 @@ export const aiProjects = [
     2. 랜덤 포레스트 기법 활용한 머신러닝 기반 예측 모델 설계`
   },
   {
-    id: 2,
+    id: 3,
     title: 'AI 기반 졸음 감지 예측모델',
     description: `사람 표정의 이미지 파일을 통해 졸음 여부를 파악하는 시스템입니다. 
     CNN 기법을 활용하여 모델을 학습시켰고, LLM을 통해 사용자에게 자연어로 설명하는 기능이 포함되어있습니다.`,
